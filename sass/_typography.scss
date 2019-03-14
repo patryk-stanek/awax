@@ -11,8 +11,13 @@
     font-size: 35px;
 
     &--white {
-
+        color: $color-white;
     }
+}
+
+.heading-3 {
+    @include text-center;
+    color: $color-white;
 }
 
 .paragraph {
@@ -24,4 +29,12 @@
     @include text-center;
     font-weight: 600;
     color: $color-grey-light;
+}
+
+.paragraph-small {
+    text-align: center;
+    font-family: $font-secondary;
+    color: $color-grey-light-2;
+    font-size: 12px;
+    line-height: 30px;
 }
