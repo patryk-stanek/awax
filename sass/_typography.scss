@@ -1,7 +1,27 @@
-.header-1 {
+.heading-1 {
+    @include text-center;
     font-size: 70px;
-    text-transform: uppercase;
-    text-align: center;
     color: $color-white;
     line-height: 100%;
+}
+
+.heading-2 {
+    @include text-center;
+    font-weight: 600;
+    font-size: 35px;
+
+    &--white {
+
+    }
+}
+
+.paragraph {
+    font-family: $font-secondary;
+    line-height: 30px;
+}
+
+.paragraph-head {
+    @include text-center;
+    font-weight: 600;
+    color: $color-grey-light;
 }
