@@ -20,6 +20,12 @@
     color: $color-white;
 }
 
+.heading-4 {
+    @include text-center;
+    font-family: $font-secondary;
+    font-size: 24px;
+}
+
 .paragraph {
     font-family: $font-secondary;
     line-height: 30px;
