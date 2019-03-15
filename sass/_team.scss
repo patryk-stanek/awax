@@ -10,13 +10,14 @@
 
     &__box {
         @include flex-row-center;
-        margin-bottom: 25px;
+        // margin-bottom: 25px;
+        margin: 30px 0;
     }
 
     &__slides {
         @include flex-col-center;
         background-color: $color-white;
-        border-radius: 2px;
+        border-radius: 3px;
         margin: 15px;
         padding: 40px;
     }
@@ -24,7 +25,7 @@
     &__img {
         width: 100%;
         border-radius: 50%;
-        padding: 50px;
+        padding: 25px 50px 25px 50px;
     }
 
     &__text {
