@@ -15,5 +15,6 @@ body {
 }
 
 section {
+    @include flex-center;
     padding: 50px 0;
 }

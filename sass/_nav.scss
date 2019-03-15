@@ -7,13 +7,6 @@
     position: absolute;
     top: 0;
 
-    &__logo {
-    }
-
-    &__img {
-
-    }
-
     &__list {
         @include flex-row-center;
         list-style: none;
@@ -27,13 +20,13 @@
     &__link:link,
     &__link:visited {
         @include flex-col-center;
+        @include transition;
         justify-content: center;
         text-decoration: none;
         color: $color-white;
         text-transform: uppercase;
         font-weight: 700;
         margin: 0 10px;
-        @include transition;
         height: 100%;
         border-bottom: 5px solid transparent;
 
