@@ -327,6 +327,28 @@ section {
   margin: -20px 0;
 }
 
+.companies {
+  border-top: 1px solid #BEBEBE;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.companies__container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.companies__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  list-style: none;
+}
+
 .header {
   background-image: url(../images/hero.png);
   background-size: cover;
