@@ -991,6 +991,7 @@ section {
 }
 
 .social__icon {
+  transition: all .2s ease-out;
   color: #ffffff;
   font-size: 16px;
   width: 30px;
@@ -1018,6 +1019,10 @@ section {
 
 .social__icon--pinterest {
   background-color: #B71C29;
+}
+
+.social__icon:hover, .social__icon:active {
+  filter: contrast(150%);
 }
 
 .social__number {
