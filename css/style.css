@@ -539,6 +539,52 @@ input::placeholder {
   right: 100px;
 }
 
+.map {
+  background-image: url(../images/map.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.map__box {
+  background-color: #ffffff;
+  padding: 50px 30px;
+  border-radius: 3px;
+  width: 50%;
+}
+
+.map__list {
+  list-style: none;
+}
+
+.map__item {
+  margin: 10px 0;
+}
+
+.map__icon {
+  color: #ffffff;
+  background-color: #AEAEAE;
+  font-size: 20px;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+.map__text {
+  color: #737373;
+  font-size: 12px;
+}
+
+.map__up {
+  position: absolute;
+  bottom: -35px;
+  left: 100px;
+}
+
 .premium {
   position: relative;
 }
