@@ -1,0 +1,57 @@
+.premium {
+    position: relative;
+    border-bottom: 5px solid red;
+    // flex-direction: column;
+
+    &__container {
+        @include width;
+        border-bottom: 1px solid $color-grey-light-4;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+    }
+
+    &__box {
+        @include flex-row-center;
+        margin-top: 50px;
+    }
+
+    &__half {
+        flex-basis: 50%;
+    }
+
+    &__main {
+        list-style: none;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        color: $color-grey-light-2;
+        font-size: 14px;
+    }
+
+    &__header {
+        @include flex-row-center;
+        font-weight: 700;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: $color-black;
+        margin-top: 10px;
+    }
+
+    &__icon {
+        color: $color-gold;
+        font-size: 40px;
+        margin-left: -80px;
+        margin-right: 40px;
+    }
+
+    &__dots {
+        width: 100%;
+        position: relative;
+        padding-top: 100px;
+        // @include flex-col-center;
+    }
+}
