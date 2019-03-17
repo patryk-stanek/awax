@@ -1,7 +1,5 @@
 .premium {
     position: relative;
-    border-bottom: 5px solid red;
-    // flex-direction: column;
 
     &__container {
         @include width;
@@ -52,6 +50,5 @@
         width: 100%;
         position: relative;
         padding-top: 100px;
-        // @include flex-col-center;
     }
 }

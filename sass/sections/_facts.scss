@@ -1,0 +1,33 @@
+.facts {
+    background-color: $color-black;
+
+    &__container {
+        @include width;
+    }
+
+    &__box {
+        @include flex-row;
+    }
+
+    &__card {
+        @include flex-col-center;
+        flex-basis: 25%;
+        padding: 25px;
+    }
+
+    &__number {
+        color: $color-gold;
+        font-size: 70px;
+        text-align: center;
+        font-weight: 700;
+
+        &::after {
+            content: '';
+            width: 20px;
+            height: 2px;
+            background-color: $color-grey-light;
+            display: block;
+            margin: -10px auto 10px;
+        }
+    }
+}
