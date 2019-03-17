@@ -38,6 +38,12 @@
         line-height: 30px;
         border-radius: 50%;
         text-align: center;
+
+        &--twitter {background-color: $color-twitter;}
+        &--linkedin {background-color: $color-in;}
+        &--facebook {background-color: $color-facebook;}
+        &--google-plus {background-color: $color-gplus;}
+        &--pinterest {background-color: $color-pinterest;}
     }
 
     &__number {
@@ -46,13 +52,4 @@
         font-weight: 700;
         margin-left: 10px;
     }
-}
-
-.fa {
-
-    &-twitter {background-color: $color-twitter;}
-    &-linkedin-in {background-color: $color-in;}
-    &-facebook-f {background-color: $color-facebook;}
-    &-google-plus-g {background-color: $color-gplus;}
-    &-pinterest-p {background-color: $color-pinterest;}
 }

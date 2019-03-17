@@ -20,6 +20,11 @@
     flex-direction: row;
 }
 
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
 @mixin transition {
     transition: all .2s ease-out;
 }

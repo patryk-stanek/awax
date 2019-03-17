@@ -1,0 +1,75 @@
+.footer {
+    background-color: $color-black;
+    padding: 35px 0;
+    color: white !important;
+
+    &__container {
+        @include flex-row;
+    }
+
+    &__box {
+        @include flex-col;
+        justify-content: space-between;
+        flex-basis: 33%;
+    }
+
+    &__list {
+        @include flex-row-center;
+        list-style: none;
+    }
+
+    &__item {
+
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: $color-white
+    }
+
+    &__icon {
+        @include transition;
+        background-color: $color-grey-dark;
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 5px;
+
+        &:hover,
+        &:active {
+            background-color: $color-gold;
+        }
+    }
+
+    &__paragraph {
+        color: $color-grey-light-2;
+        font-size: 13px;
+        padding-right: 25px;
+    }
+
+    &__subscribe {
+        @include flex-col-center;
+        justify-content: center;
+        height: 100%;
+        background-color: $color-grey-dark;
+        border-radius: 3px;
+    }
+
+    &__input {
+        background-color: $color-grey-dark;
+        padding-bottom: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px solid $color-grey-light-4;
+        width: 60%;
+        color: $color-grey-light-2;
+
+        &::placeholder {
+            text-transform: uppercase;
+        }
+    }
+}
