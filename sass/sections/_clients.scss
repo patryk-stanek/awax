@@ -1,0 +1,49 @@
+.clients {
+    background-color: $color-grey;
+    position: relative;
+
+    &__container {
+        @include width;
+        position: relative;
+    }
+
+    &__box {
+        @include flex-col-center;
+        margin-top: 50px;
+    }
+
+    &__img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: block;
+        margin: 20px;
+    }
+
+    &__name {
+        font-family: $font-primary;
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    &__title {
+        font-family: $font-secondary;
+        font-weight: 700;
+    }
+
+    &__paragraph {
+        text-align: center;
+        padding: 50px 150px;
+        color: $color-grey-light-2;
+
+        &::before {
+            content: '“';
+            display: block;
+            color: $color-grey-dark;
+            font-weight: 900;
+            font-size: 70px;
+            font-family: 'Times New Roman', Times, serif;
+            margin: -20px 0;
+        }
+    }
+}

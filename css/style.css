@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -212,6 +213,7 @@ section {
 
 .about__container {
   max-width: 1200px;
+  width: 100%;
 }
 
 .about__box {
@@ -267,6 +269,62 @@ section {
   width: 70px;
   height: 70px;
   line-height: 70px;
+}
+
+.clients {
+  background-color: #F7F7F7;
+  position: relative;
+}
+
+.clients__container {
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+}
+
+.clients__box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 50px;
+}
+
+.clients__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px;
+}
+
+.clients__name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.clients__title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+
+.clients__paragraph {
+  text-align: center;
+  padding: 50px 150px;
+  color: #737373;
+}
+
+.clients__paragraph::before {
+  content: '“';
+  display: block;
+  color: #373737;
+  font-weight: 900;
+  font-size: 70px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: -20px 0;
 }
 
 .header {
@@ -357,6 +415,7 @@ section {
 
 .projects__container {
   max-width: 1200px;
+  width: 100%;
 }
 
 .projects__menu {
@@ -474,6 +533,7 @@ section {
 
 .services__container {
   max-width: 1200px;
+  width: 100%;
 }
 
 .services__box {

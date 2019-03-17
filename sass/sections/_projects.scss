@@ -1,7 +1,7 @@
 .projects {
 
     &__container {
-        max-width: 1200px;
+        @include width;
     }
 
     &__menu {
