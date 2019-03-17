@@ -2,10 +2,6 @@
     background-color: $color-grey;
     border-bottom: 1px solid $color-grey-light-4;
 
-    &__container {
-        @include width;
-    }
-
     &__box {
         @include flex-row-center;
         margin-top: 50px;

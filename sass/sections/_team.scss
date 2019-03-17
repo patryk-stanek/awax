@@ -4,10 +4,6 @@
     background-position: center;
     position: relative;
 
-    &__container {
-        @include width;
-    }
-
     &__box {
         @include flex-row-center;
         margin: 30px 0;

@@ -19,6 +19,13 @@ section {
   padding: 50px 0;
 }
 
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
 .heading-1 {
   text-transform: uppercase;
   text-align: center;
@@ -224,12 +231,6 @@ section {
   background-color: #F7F7F7;
 }
 
-.about__container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .about__box {
   display: -ms-flexbox;
   display: flex;
@@ -290,13 +291,6 @@ section {
   position: relative;
 }
 
-.clients__container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-
 .clients__box {
   display: -ms-flexbox;
   display: flex;
@@ -347,12 +341,6 @@ section {
   border-bottom: 1px solid #BEBEBE;
 }
 
-.companies__container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .companies__list {
   display: -ms-flexbox;
   display: flex;
@@ -365,14 +353,69 @@ section {
   list-style: none;
 }
 
-.facts {
-  background-color: #000000;
+.contact {
+  background-color: #F7F7F7;
 }
 
-.facts__container {
-  max-width: 1200px;
+.contact__box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 50px auto 0;
+  width: 50%;
+}
+
+.contact__row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
   width: 100%;
-  margin: 0 auto;
+}
+
+.contact__name {
+  margin: 20px 10px 20px 0;
+}
+
+.contact__email {
+  margin: 20px 0 20px 10px;
+}
+
+.contact__subject {
+  margin: 20px 10px;
+}
+
+.contact__message {
+  margin: 40px 10px;
+}
+
+input[type=text],
+input[type=email] {
+  border: none;
+  border-bottom: 2px solid #BEBEBE;
+  background-color: #F7F7F7;
+  width: 100%;
+  padding-bottom: 10px;
+  color: #737373;
+}
+
+input:-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #BEBEBE;
+}
+
+input::placeholder {
+  text-transform: uppercase;
+  color: #BEBEBE;
+}
+
+.facts {
+  background-color: #000000;
 }
 
 .facts__box {
@@ -501,9 +544,6 @@ section {
 }
 
 .premium__container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
   border-bottom: 1px solid #BEBEBE;
   padding-bottom: 25px;
   margin-bottom: 25px;
@@ -569,12 +609,6 @@ section {
   border-bottom: 1px solid #BEBEBE;
 }
 
-.price__container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .price__box {
   display: -ms-flexbox;
   display: flex;
@@ -632,12 +666,6 @@ section {
   background-color: #373737;
   width: 10px;
   height: 1px;
-}
-
-.projects__container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .projects__menu {
@@ -753,12 +781,6 @@ section {
   background-color: #000000;
 }
 
-.services__container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .services__box {
   display: -ms-flexbox;
   display: flex;
@@ -794,12 +816,6 @@ section {
 .social {
   border-bottom: 1px solid #BEBEBE;
   padding: 25px;
-}
-
-.social__container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .social__list {
@@ -878,12 +894,6 @@ section {
   background-size: cover;
   background-position: center;
   position: relative;
-}
-
-.team__container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .team__box {

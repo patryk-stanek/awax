@@ -2,11 +2,6 @@
     background-color: $color-grey;
     position: relative;
 
-    &__container {
-        @include width;
-        position: relative;
-    }
-
     &__box {
         @include flex-col-center;
         margin-top: 50px;

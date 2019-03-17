@@ -1,9 +1,5 @@
 .projects {
 
-    &__container {
-        @include width;
-    }
-
     &__menu {
         width: 100%;
         display: inline-flex;

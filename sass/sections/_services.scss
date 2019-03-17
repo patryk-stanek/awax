@@ -1,10 +1,6 @@
 .services {
     background-color: $color-black;
 
-    &__container {
-        @include width;
-    }
-
     &__box {
         @include flex-row;
         margin-top: 25px;

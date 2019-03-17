@@ -1,10 +1,6 @@
 .about {
     background-color: $color-grey;
 
-    &__container {
-        @include width;
-    }
-
     &__box {
         display: flex;
         flex-direction: row;

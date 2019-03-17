@@ -2,7 +2,6 @@
     position: relative;
 
     &__container {
-        @include width;
         border-bottom: 1px solid $color-grey-light-4;
         padding-bottom: 25px;
         margin-bottom: 25px;
