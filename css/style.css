@@ -83,6 +83,7 @@ section {
   text-decoration: none;
   padding: 12px 45px;
   font-weight: 600;
+  display: inline-block;
 }
 
 .btn__icon {
@@ -104,6 +105,15 @@ section {
 
 .btn--gold:hover, .btn--gold:active {
   background-color: #9b754b;
+}
+
+.btn--grey {
+  transition: all .2s ease-out;
+  background-color: #373737;
+}
+
+.btn--grey:hover, .btn--grey:active {
+  background-color: #B88B58;
 }
 
 .dots {
@@ -329,7 +339,7 @@ section {
 
 .companies {
   border-top: 1px solid #BEBEBE;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #BEBEBE;
 }
 
 .companies__container {
@@ -433,6 +443,75 @@ section {
   position: absolute;
   bottom: -35px;
   right: 100px;
+}
+
+.price {
+  background-color: #F7F7F7;
+  border-bottom: 1px solid #BEBEBE;
+}
+
+.price__container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.price__box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 50px;
+}
+
+.price__card {
+  background-color: #ffffff;
+  border-radius: 3px;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  margin: 10px;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.price__name, .price__price, .price__time {
+  display: block;
+}
+
+.price__name {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.price__price {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.price__time {
+  text-transform: uppercase;
+  color: #AEAEAE;
+  font-size: 10px;
+}
+
+.price__list {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.price__item {
+  font-size: 10px;
+  color: #373737;
+}
+
+.price__item:not(:last-child)::after {
+  display: block;
+  margin: 5px auto;
+  content: "";
+  background-color: #373737;
+  width: 10px;
+  height: 1px;
 }
 
 .projects__container {

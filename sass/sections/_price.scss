@@ -1,0 +1,63 @@
+.price {
+    background-color: $color-grey;
+    border-bottom: 1px solid $color-grey-light-4;
+
+    &__container {
+        @include width;
+    }
+
+    &__box {
+        @include flex-row-center;
+        margin-top: 50px;
+    }
+
+    &__card {
+        background-color: $color-white;
+        border-radius: 3px;
+        flex-basis: 25%;
+        margin: 10px;
+        text-align: center;
+        padding: 30px 10px;
+    }
+
+    &__name,
+    &__price,
+    &__time {
+        display: block;
+    }
+
+    &__name {
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+
+    &__price {
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+    &__time {
+        text-transform: uppercase;
+        color: $color-grey-light;
+        font-size: 10px;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 20px 0;
+    }
+
+    &__item {
+        font-size: 10px;
+        color: $color-grey-dark;
+
+        &:not(:last-child)::after {
+            display: block;
+            margin: 5px auto;
+            content: "";
+            background-color: $color-grey-dark;
+            width: 10px;
+            height: 1px;
+        }
+    }
+}
