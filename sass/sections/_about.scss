@@ -1,0 +1,55 @@
+.about {
+    background-color: $color-grey;
+
+    &__container {
+        max-width: 1200px;
+    }
+
+    &__box {
+        // @include flex-row-center;
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        // top: 0;
+        align-items: flex-start;
+        padding-right: 50px;
+
+        & p {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__right {
+        position: relative;
+    }
+
+    &__img {
+        @include shadow;
+        width: 400px;
+        filter: brightness(50%);
+        cursor: pointer;
+    }
+
+    &__text {
+        @include center;
+        @include text-center;
+        color: $color-white;
+        font-size: 35px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    &__icon {
+        color: $color-white;
+        border: 2px solid $color-white;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+    }
+}

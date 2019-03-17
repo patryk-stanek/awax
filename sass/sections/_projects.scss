@@ -1,0 +1,100 @@
+.projects {
+
+    &__container {
+        max-width: 1200px;
+    }
+
+    &__menu {
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    &__list {
+        @include flex-row-center;
+        list-style: none;
+        border: 1px solid $color-grey-light;
+        background-color: $color-grey-light-3;
+        border-radius: 50px;
+        padding: 2px 30px;
+        margin: 50px auto;
+    }
+
+    &__item {
+        padding: 0 2px;
+
+        &:not(:last-child) {
+            border-right: 1px solid $color-grey-light;
+        }
+    }
+
+    &__link:link,
+    &__link:visited {
+        @include transition;
+        display: flex;
+        height: 100%;
+        text-decoration: none;
+        color: $color-black;
+        padding: 10px 20px;
+        border-bottom: 5px solid transparent;
+        transform: translateY(2px);
+
+        &:hover,
+        &:active {
+            border-bottom: 5px solid $color-gold;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__slide {
+        flex-basis: 25%;
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__img {
+        @include transition;
+        width: 100%;
+        padding: 15px;
+    }
+
+    &__details {
+        @include transition;
+        @include center;
+        position: absolute;
+        color: $color-white;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        overflow: hidden;
+        opacity: 0;
+    }
+
+    &__title {
+        display: block;
+    }
+
+    &__text {
+        font-size: 12px;
+        line-height: 5px;
+    }
+
+    &__slide:hover > &__img {
+        filter: brightness(50%);
+    }
+
+    &__slide:hover > &__details {
+        opacity: 1;
+    }
+
+    &__btn {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+}

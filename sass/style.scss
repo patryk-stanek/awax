@@ -2,22 +2,24 @@
 @import "mixins";
 @import "utilities";
 
-@import "about";
 @import "base";
-@import "buttons";
-@import "clients";
-@import "companies";
-@import "contact";
-@import "dots";
-@import "facts";
-@import "footer";
-@import "header";
-@import "map";
-@import "nav";
-@import "premium";
-@import "price";
-@import "projects";
-@import "services";
-@import "social";
-@import "team";
 @import "typography";
+
+@import "elements/buttons";
+@import "elements/dots";
+@import "elements/nav";
+
+@import "sections/about";
+@import "sections/clients";
+@import "sections/companies";
+@import "sections/contact";
+@import "sections/facts";
+@import "sections/footer";
+@import "sections/header";
+@import "sections/map";
+@import "sections/premium";
+@import "sections/price";
+@import "sections/projects";
+@import "sections/services";
+@import "sections/social";
+@import "sections/team";
