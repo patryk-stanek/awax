@@ -69,6 +69,7 @@
         text-align: center;
         overflow: hidden;
         opacity: 0;
+        bottom: -25px;
     }
 
     &__title {
@@ -86,6 +87,7 @@
 
     &__slide:hover > &__details {
         opacity: 1;
+        bottom: 0;
     }
 
     &__btn {

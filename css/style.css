@@ -888,6 +888,7 @@ section {
   text-align: center;
   overflow: hidden;
   opacity: 0;
+  bottom: -25px;
 }
 
 .projects__title {
@@ -905,6 +906,7 @@ section {
 
 .projects__slide:hover > .projects__details {
   opacity: 1;
+  bottom: 0;
 }
 
 .projects__btn {
