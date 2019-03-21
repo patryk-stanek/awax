@@ -69,5 +69,9 @@
         position: absolute;
         bottom: -35px;
         right: 100px;
+
+        @include respond(break-xl) {
+            bottom: -30px;
+        }
     }
 }

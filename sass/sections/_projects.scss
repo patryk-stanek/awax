@@ -51,6 +51,10 @@
         flex-basis: 25%;
         position: relative;
         cursor: pointer;
+
+        @include respond(break-l) {
+            flex-basis: 33%;
+        }
     }
 
     &__img {

@@ -6,5 +6,13 @@
         @include flex-row-center;
         justify-content: space-between;
         list-style: none;
+        flex-wrap: wrap;
+    }
+
+    &__img {
+
+        @include respond(break-l) {
+            flex-basis: calc(100% / 3);
+        }
     }
 }

@@ -34,5 +34,9 @@
         &:active {
             border-bottom: 5px solid $color-gold;
         }
+
+        @include respond(break-l) {
+            margin: 0 7px;
+        }
     }
 }

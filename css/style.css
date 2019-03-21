@@ -19,6 +19,12 @@ section {
   padding: 50px 0;
 }
 
+@media only screen and (max-width: 1200px) {
+  section {
+    padding: 50px 5px;
+  }
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -118,6 +124,15 @@ section {
   line-height: 70px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  .btn__icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+  }
 }
 
 .dots {
@@ -225,6 +240,12 @@ section {
 
 .nav__link:link:hover, .nav__link:link:active, .nav__link:visited:hover, .nav__link:visited:active {
   border-bottom: 5px solid #B88B58;
+}
+
+@media only screen and (max-width: 991px) {
+  .nav__link:link, .nav__link:visited {
+    margin: 0 7px;
+  }
 }
 
 .about {
@@ -351,6 +372,15 @@ section {
   -ms-flex-pack: justify;
       justify-content: space-between;
   list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 991px) {
+  .companies__img {
+    -ms-flex-preferred-size: calc(100% / 3);
+        flex-basis: calc(100% / 3);
+  }
 }
 
 .contact {
@@ -366,6 +396,12 @@ section {
       align-items: center;
   margin: 50px auto 0;
   width: 50%;
+}
+
+@media only screen and (max-width: 991px) {
+  .contact__box {
+    width: 75%;
+  }
 }
 
 .contact__row {
@@ -465,6 +501,13 @@ section {
       flex-direction: row;
 }
 
+@media only screen and (max-width: 991px) {
+  .footer__container {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
 .footer__box {
   display: -ms-flexbox;
   display: flex;
@@ -484,6 +527,13 @@ section {
   -ms-flex-align: center;
       align-items: center;
   list-style: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .footer__list {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
 }
 
 .footer__link:link, .footer__link:visited {
@@ -512,6 +562,14 @@ section {
   padding-right: 25px;
 }
 
+@media only screen and (max-width: 991px) {
+  .footer__paragraph {
+    font-size: 12px;
+    padding: 25px;
+    text-align: center;
+  }
+}
+
 .footer__subscribe {
   display: -ms-flexbox;
   display: flex;
@@ -524,6 +582,12 @@ section {
   height: 100%;
   background-color: #373737;
   border-radius: 3px;
+}
+
+@media only screen and (max-width: 991px) {
+  .footer__subscribe {
+    padding: 25px;
+  }
 }
 
 .footer__input {
@@ -543,6 +607,12 @@ section {
 
 .footer__input::placeholder {
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 991px) {
+  .footer__awax {
+    text-align: center;
+  }
 }
 
 .header {
@@ -631,6 +701,12 @@ section {
   right: 100px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .header__icon {
+    bottom: -30px;
+  }
+}
+
 .map {
   background-image: url(../images/map.png);
   background-size: cover;
@@ -675,6 +751,12 @@ section {
   position: absolute;
   bottom: -35px;
   left: 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .map__up {
+    bottom: -30px;
+  }
 }
 
 .premium {
@@ -755,16 +837,25 @@ section {
   -ms-flex-align: center;
       align-items: center;
   margin-top: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .price__card {
   background-color: #ffffff;
   border-radius: 3px;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: calc(25% - 20px);
+      flex-basis: calc(25% - 20px);
   margin: 10px;
   text-align: center;
   padding: 30px 10px;
+}
+
+@media only screen and (max-width: 991px) {
+  .price__card {
+    -ms-flex-preferred-size: calc(50% - 20px);
+        flex-basis: calc(50% - 20px);
+  }
 }
 
 .price__name, .price__price, .price__time {
@@ -867,6 +958,13 @@ section {
       flex-basis: 25%;
   position: relative;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 991px) {
+  .projects__slide {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
 }
 
 .projects__img {
@@ -1103,5 +1201,11 @@ section {
 
 .team__link:link:hover, .team__link:link:active, .team__link:visited:hover, .team__link:visited:active {
   background-color: #B88B58;
+}
+
+@media only screen and (max-width: 1200px) {
+  .team__link:link, .team__link:visited {
+    margin: 3px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

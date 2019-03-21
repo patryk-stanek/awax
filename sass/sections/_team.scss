@@ -52,5 +52,9 @@
         &:active {
             background-color: $color-gold;
         }
+
+        @include respond(break-xl) {
+            margin: 3px;
+        }
     }
 }

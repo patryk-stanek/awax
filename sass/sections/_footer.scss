@@ -5,17 +5,29 @@
 
     &__container {
         @include flex-row;
+
+        @include respond(break-l) {
+            flex-direction: column;
+        }
     }
 
     &__box {
         @include flex-col;
         justify-content: space-between;
         flex-basis: 33%;
+
+        @include respond(break-l) {
+            
+        }
     }
 
     &__list {
         @include flex-row-center;
         list-style: none;
+
+        @include respond(break-l) {
+            justify-content: center;
+        }
     }
 
     &__link:link,
@@ -44,6 +56,12 @@
         color: $color-grey-light-2;
         font-size: 13px;
         padding-right: 25px;
+
+        @include respond(break-l) {
+            font-size: 12px;
+            padding: 25px;
+            text-align: center;
+        }
     }
 
     &__subscribe {
@@ -52,6 +70,10 @@
         height: 100%;
         background-color: $color-grey-dark;
         border-radius: 3px;
+
+        @include respond(break-l) {
+            padding: 25px;
+        }
     }
 
     &__input {
@@ -66,6 +88,14 @@
 
         &::placeholder {
             text-transform: uppercase;
+        }
+    }
+
+    &__awax {
+
+
+        @include respond(break-l) {
+            text-align: center;
         }
     }
 }
