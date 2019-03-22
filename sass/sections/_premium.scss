@@ -10,6 +10,10 @@
     &__box {
         @include flex-row-center;
         margin-top: 50px;
+
+        @include respond(break-l) {
+            flex-direction: column;
+        }
     }
 
     &__half {
@@ -22,11 +26,19 @@
 
     &__list {
         list-style: none;
+
+        @include respond(break-l) {
+            text-align: center;
+        }
     }
 
     &__item {
         color: $color-grey-light-2;
         font-size: 14px;
+    }
+
+    &__img {
+        width: 100%;
     }
 
     &__header {
@@ -36,6 +48,14 @@
         text-transform: uppercase;
         color: $color-black;
         margin-top: 10px;
+
+        @include respond(break-l) {
+            justify-content: center;
+        }
+
+        @include respond(break-s) {
+            font-size: 24px;
+        }
     }
 
     &__icon {
@@ -43,6 +63,17 @@
         font-size: 40px;
         margin-left: -80px;
         margin-right: 40px;
+
+        @include respond(break-xl) {
+            margin-left: -40px;
+            margin-right: 10px;
+            font-size: 30px;
+        }
+
+        @include respond(break-l) {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
     }
 
     &__dots {

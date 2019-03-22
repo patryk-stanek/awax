@@ -9,11 +9,19 @@
         @include respond(break-l) {
             width: 75%;
         }
+
+        @include respond(break-s) {
+            width: 100%;
+        }
     }
 
     &__row {
         @include flex-row-center;
         width: 100%;
+
+        @include respond(break-s) {
+            flex-direction: column;
+        }
     }
 
     &__input {
@@ -29,13 +37,37 @@
             color: $color-grey-light-4;
         }
 
-        &--name {margin: 20px 10px 20px 0;}
+        &--name {
+            margin: 20px 10px 20px 0;
 
-        &--email {margin: 20px 0 20px 10px;}
+            @include respond(break-s) {
+                margin: 10px 5px;
+            }
+        }
 
-        &--subject {margin: 20px 10px;}
+        &--email {
+            margin: 20px 0 20px 10px;
 
-        &--message {margin: 40px 10px;}
+            @include respond(break-s) {
+                margin: 10px 5px;
+            }
+        }
+
+        &--subject {
+            margin: 20px 10px;
+
+            @include respond(break-s) {
+                margin: 10px 5px;
+            }
+        }
+
+        &--message {
+            margin: 40px 10px;
+
+            @include respond(break-s) {
+                margin: 10px 5px;
+            }
+        }
 
     }
 }

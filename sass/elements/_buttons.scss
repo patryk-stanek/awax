@@ -10,6 +10,11 @@
         font-weight: 600;
         display: inline-block;
 
+        @include respond(break-m) {
+            font-size: 13px;
+            padding: 10px 40px;
+        }
+
         &--gold {
             @include transition;
             background-color: $color-gold;

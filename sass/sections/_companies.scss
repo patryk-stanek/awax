@@ -7,12 +7,16 @@
         justify-content: space-between;
         list-style: none;
         flex-wrap: wrap;
+
+        @include respond(break-l) {
+            justify-content: center;
+        }
     }
 
     &__img {
 
         @include respond(break-l) {
-            flex-basis: calc(100% / 3);
+            margin: 5px;
         }
     }
 }

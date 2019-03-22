@@ -1,7 +1,7 @@
 .footer {
     background-color: $color-black;
     padding: 35px 0;
-    color: white !important;
+    color: $color-white;
 
     &__container {
         @include flex-row;
@@ -15,10 +15,6 @@
         @include flex-col;
         justify-content: space-between;
         flex-basis: 33%;
-
-        @include respond(break-l) {
-            
-        }
     }
 
     &__list {
@@ -27,6 +23,7 @@
 
         @include respond(break-l) {
             justify-content: center;
+            margin-bottom: 10px;
         }
     }
 
@@ -92,7 +89,6 @@
     }
 
     &__awax {
-
 
         @include respond(break-l) {
             text-align: center;

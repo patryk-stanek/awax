@@ -19,6 +19,11 @@
         @include respond(break-l) {
             flex-basis: calc(50% - 20px);
         }
+
+        @include respond(break-s) {
+            flex-basis: 100%;
+            margin: 10px 0;
+        }
     }
 
     &__name,

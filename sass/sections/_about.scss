@@ -5,22 +5,37 @@
         display: flex;
         flex-direction: row;
         margin-top: 50px;
+
+        @include respond(break-l) {
+            flex-direction: column;
+        }
     }
 
     &__left {
         display: flex;
         flex-direction: column;
-        // top: 0;
         align-items: flex-start;
         padding-right: 50px;
 
         & p {
             margin-bottom: 25px;
         }
+
+        @include respond(break-l) {
+            align-items: center;
+            padding: 10px;
+            text-align: center;
+        }
     }
 
     &__right {
         position: relative;
+
+        @include respond(break-l) {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
     }
 
     &__img {

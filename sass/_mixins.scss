@@ -52,28 +52,22 @@
 }
 
 @mixin respond($breakpoint) {
-
     @if $breakpoint == break-xs {
         @media only screen and (max-width: $break-xs) { @content };
     }
-
     @if $breakpoint == break-s {
         @media only screen and (max-width: $break-s) { @content };
     }
-
     @if $breakpoint == break-m {
         @media only screen and (max-width: $break-m) { @content };
     }
-
     @if $breakpoint == break-l {
         @media only screen and (max-width: $break-l) { @content };
     }
-
     @if $breakpoint == break-xl {
         @media only screen and (max-width: $break-xl) { @content };
     }
-    
     @if $breakpoint == hover {
-        @media not all and (hover: none) { @content };
+        @media only screen and (min-width: $break-xl) { @content };
     }
 }

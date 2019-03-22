@@ -7,10 +7,18 @@
         justify-content: center;
         list-style: none;
         width: 100%;
+
+        @include respond(break-s) {
+            flex-wrap: wrap;
+        }
     }
 
     &__text {
         margin-right: 35px;
+
+        @include respond(break-s) {
+            margin-right: 10px;
+        }
     }
 
     &__link:link,
@@ -18,12 +26,20 @@
         @include flex-row-center;
         text-decoration: none;
         margin: 0 25px;
+
+        @include respond(break-l) {
+            margin: 0 5px;
+        }
     }
 
     &__share {
         color: $color-grey-light-4;
         font-size: 25px;
         margin-right: 15px;
+
+        @include respond(break-s) {
+            margin-right: 10px;
+        }
     }
 
     &__icon {
@@ -45,6 +61,10 @@
         &:hover,
         &:active {
             filter: contrast(150%);
+        }
+
+        @include respond(break-s) {
+            margin: 2px;
         }
     }
 

@@ -8,6 +8,8 @@
         @include flex-row-center;
         margin: 30px 0;
         width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     &__slides {
@@ -16,7 +18,11 @@
         border-radius: 3px;
         margin: 15px;
         padding: 40px 0;
-        flex-basis: 33%;
+        flex-basis: 30%;
+
+        @include respond(break-m) {
+            padding: 5px 0;
+        }
     }
 
     &__img {
@@ -33,6 +39,7 @@
     &__social {
         @include flex-row-center;
         list-style: none;
+        padding: 0 5px;
     }
 
     &__link:link,
@@ -51,10 +58,6 @@
         &:hover,
         &:active {
             background-color: $color-gold;
-        }
-
-        @include respond(break-xl) {
-            margin: 3px;
         }
     }
 }

@@ -3,6 +3,8 @@
 
     &__box {
         @include flex-row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     &__card {
@@ -24,6 +26,10 @@
             background-color: $color-grey-light;
             display: block;
             margin: -10px auto 10px;
+        }
+
+        @include respond(break-s) {
+            font-size: 50px;
         }
     }
 }

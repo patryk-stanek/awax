@@ -23,6 +23,14 @@
         text-transform: uppercase;
         margin-top: 20px;
         margin-bottom: 30px;
+
+        @include respond(break-m) {
+            font-size: 18px;
+        }
+
+        @include respond(break-s) {
+            font-size: 13px;
+        }
     }
 
     &__dots {
@@ -72,6 +80,10 @@
 
         @include respond(break-xl) {
             bottom: -30px;
+        }
+
+        @include respond(break-s) {
+            right: 0;
         }
     }
 }

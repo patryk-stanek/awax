@@ -4,6 +4,7 @@
     &__box {
         @include flex-row;
         margin-top: 25px;
+        flex-wrap: wrap;
     }
 
     &__slide {
@@ -14,6 +15,17 @@
 
         &:last-child {
             border-right: 2px solid $color-grey-light-2;
+        }
+
+        @include respond(break-m) {
+            width: calc(50% - 4px);
+            border: 2px solid $color-grey-light-2;
+            margin: 2px;
+        }
+
+        @include respond(break-s) {
+            width: calc(100% - 4px);
+            margin: 2px;
         }
     }
 
