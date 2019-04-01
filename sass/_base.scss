@@ -26,3 +26,8 @@ section {
     @include width;
     position: relative;
 }
+
+.hidden-label {
+    opacity: 0;
+    left: -9999;
+}
