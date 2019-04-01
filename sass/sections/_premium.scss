@@ -26,9 +26,11 @@
 
     &__list {
         list-style: none;
+        margin-left: 40px;
 
         @include respond(break-l) {
             text-align: center;
+            margin-left: 0;
         }
     }
 

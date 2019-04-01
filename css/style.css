@@ -1082,11 +1082,13 @@ section {
 
 .premium__list {
   list-style: none;
+  margin-left: 40px;
 }
 
 @media only screen and (max-width: 991px) {
   .premium__list {
     text-align: center;
+    margin-left: 0;
   }
 }
 
