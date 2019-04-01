@@ -14,7 +14,8 @@
     "npm-run-all": "^4.1.5",
     "nu-html-checker": "^0.1.0",
     "onchange": "^5.2.0",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "tinyjpg": "^1.0.6"
   },
   "scripts": {
     "test": "npm-run-all test:*",
@@ -32,7 +33,8 @@
     "watch:browsersync": "browser-sync --watch",
     "watch:sassprefixer": "onchange sass -- npm-run-all sass -p autoprefixer",
     "sass": "node-sass --output-style expanded --source-map true -o css sass",
-    "autoprefixer": "autoprefixer-cli -o css/style.css css/style.css"
+    "autoprefixer": "autoprefixer-cli -o css/style.css css/style.css",
+    "img": "tinyjpg images/client.jpg"
   },
   "repository": {
     "type": "git",
