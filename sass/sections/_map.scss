@@ -1,17 +1,29 @@
 .map {
-    background-image: url(../images/map.png);
+    // background-image: url(../images/map.png);
     background-size: cover;
     background-position: center;
     position: relative;
+    // height: 600px;
+
+    &__frame {
+        position: absolute;
+        left: 0;
+        right: 0;
+        // height: 600px;
+        z-index: -1;
+        margin-top: -50px;
+    }
 
     &__box {
         background-color: $color-white;
         padding: 50px 30px;
         border-radius: 3px;
         width: 50%;
+        // display: none;
 
         @include respond(break-m) {
             width: 100%;
+            margin: 75px 0;
         }
     }
 

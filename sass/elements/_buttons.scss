@@ -46,6 +46,8 @@
         line-height: 70px;
         border-radius: 50%;
         cursor: pointer;
+        display: block;
+        text-align: center;
 
         @include respond(break-xl) {
             width: 60px;
