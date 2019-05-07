@@ -43,6 +43,10 @@
         width: 400px;
         filter: brightness(50%);
         cursor: pointer;
+
+        @include respond(break-l) {
+            height: 100%;
+        }
     }
 
     &__text {
